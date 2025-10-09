@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mushroom Studies — Home</title>
+
+  <!-- Google Fonts: Heading + Body -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mushroom Studies</h1>
+      <h2>Notes, types and featured specimens</h2>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="types.html">TYPES</a>
+        <a href="featured.html">FEATURED</a>
+      </nav>
+    </header>
+
+    <main>
+      <h3 class="hero-title">Exploring fungal forms</h3>
+      <p id="lead">
+        Welcome to <span class="accent">Mushroom Studies</span> — a small catalogue where we examine form, function and flavor.
+        This site experiments with typography, layout and information hierarchy.
+      </p>
+
+      <p class="subtitle">
+        A curated primer on a selection of familiar edible and notable species. Read through types, inspect images, and study one featured specimen.
+      </p>
+
+      <p id="note">
+        Quick note: images are managed in <code>images/</code> and all layout is controlled through <code>styles.css</code>.
+        The work favors legibility, clear hierarchy and a neutral color palette.
+      </p>
+
+      <section>
+        <h4>Gallery highlights</h4>
+        <div class="gallery" aria-label="mushroom gallery">
+          <!-- Replace filenames with your actual images -->
+          <img src="images/shiitake.jpg" alt="shiitake mushrooms">
+          <img src="images/oyster.jpg" alt="oyster mushrooms">
+          <img src="images/morel.jpg" alt="morel mushrooms">
+          <img src="images/chanterelle.jpg" alt="chanterelle mushrooms">
+          <img src="images/porcini.jpg" alt="porcini mushrooms">
+          <img src="images/enoki.jpg" alt="enoki mushrooms">
+        </div>
+      </section>
+
+      <section>
+        <h4>Typography notes</h4>
+        <p>
+          This page uses two fonts: <span class="accent">Libre Baskerville</span> for headings and <span class="muted">Almarai</span> for body text.
+          They are chosen for contrast: a classic serif for display headings, and a friendly sans for readable body text.
+        </p>
+
+        <p>
+          The word <span class="accent">display</span> is styled differently than the word <span class="muted">annotation</span> to show how spans can highlight meaning inline.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Sources: Mushroom Color Atlas — selected pages. Local images are stored in <code>images/</code>.</p>
+    </footer>
+  </div>
+</body>
+</html>
