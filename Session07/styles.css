@@ -13,7 +13,34 @@ html {
 /* END border-box fix */
 
 body {
-    background-color: rgb(222, 131, 131);
+    background-color: #69443C;
+}
+
+/* SUBSCRIBE BUTTON */
+div.buttonAbsolute {
+    background-color: rgb(255, 208, 0);
+    opacity: 1.0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    border-radius: 125px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* view gallery button */
+div.buttonRelative {
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    left: 60px;
+    z-index: 3;
 }
 
 #wrapper {
@@ -21,4 +48,43 @@ body {
   /* centers the wrapper */
   background-color: rgb(0, 178, 0);
   max-width: 1000px;
+  border: solid 10px rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Add padding to all of the #wrapper child elements */
+#wrapper>* {
+  padding: 20px;
+}
+
+header {
+    background: #3B9373;
+    order: 1;
+    flex: 1 0 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+  background: #57EBB5;
+  order: 3;
+  flex: 1 0 500px;
+}
+nav {
+  background: #A84B36;
+  order: 2;
+  flex: 1 0 200px;
+}
+aside {
+  background: #A84B36;
+  order: 4;
+  flex: 1 0 200px;
+}
+footer {
+  color: white;
+  background: #2E3E38;
+  order: 5;
+  flex: 1 0 100%;
 }
