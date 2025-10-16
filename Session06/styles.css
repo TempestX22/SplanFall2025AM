@@ -12,6 +12,7 @@ html {
 body {
     background-color: #13583A;
     color: #FFF;
+    
 }
 
 div.container {
@@ -20,7 +21,7 @@ div.container {
     /* center the div container */
     margin: 40px auto;
     background-image: url(images/06.jpg);
-
+    border: solid 10px rgb(0, 0, 0);
 }
 
 header,
@@ -47,7 +48,7 @@ nav {
 main {
     background-color: #1B7A50;
     width: 70%;
-    float: right;
+    float: left;
     background-image: url(images/04.jpg);
 }
 
@@ -66,9 +67,6 @@ footer {
     background-color: #33E89A;
     float: none;
     clear: both;
-        border: #000000;
-    border-radius: 10px;
-    border-width: 10px;
 }
 
 nav ul {
