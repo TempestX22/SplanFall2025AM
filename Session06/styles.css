@@ -1,0 +1,88 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: #13583A;
+    color: #FFF;
+}
+
+div.container {
+    width: 80%;
+    background-color: #229C67;
+    /* center the div container */
+    margin: 40px auto;
+    background-image: url(images/06.jpg);
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+    background-image: url(images/03.jpg);
+}
+
+header {
+    background-color: #33E89A;
+    background-image: url(images/02.jpg);
+}
+
+nav {
+    background-color: rgb(137, 189, 188);
+    
+}
+
+main {
+    background-color: #1B7A50;
+    width: 70%;
+    float: left;
+    background-image: url(images/04.jpg);
+}
+section {
+    background-color: #229C67;
+    background-image: url(images/05.jpg);
+}
+aside {
+    background-color: #229C67;
+    width: 30%;
+    float: left;
+    background-image: url(images/01.jpg);
+}
+
+footer {
+    background-color: #33E89A;
+    float: none;
+    clear: both;
+    background-image: url(images/06.jpg);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    background-color: #13583A;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 120px;
+}
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+nav a:hover {
+    color: #33E89A;
+}
