@@ -20,6 +20,7 @@ div.container {
     /* center the div container */
     margin: 40px auto;
     background-image: url(images/06.jpg);
+
 }
 
 header,
@@ -28,7 +29,7 @@ main,
 aside,
 footer {
     padding: 20px;
-    background-image: url(images/03.jpg);
+    background-image: url(images/03.jpg);   
 }
 
 header {
@@ -38,15 +39,18 @@ header {
 
 nav {
     background-color: rgb(137, 189, 188);
+    float: none;
+    clear: both;
     
 }
 
 main {
     background-color: #1B7A50;
     width: 70%;
-    float: left;
+    float: right;
     background-image: url(images/04.jpg);
 }
+
 section {
     background-color: #229C67;
     background-image: url(images/05.jpg);
@@ -62,7 +66,9 @@ footer {
     background-color: #33E89A;
     float: none;
     clear: both;
-    background-image: url(images/06.jpg);
+        border: #000000;
+    border-radius: 10px;
+    border-width: 10px;
 }
 
 nav ul {

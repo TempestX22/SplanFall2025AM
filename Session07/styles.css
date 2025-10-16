@@ -1,0 +1,24 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: rgb(222, 131, 131);
+}
+
+#wrapper {
+  margin: 0px auto;
+  /* centers the wrapper */
+  background-color: rgb(0, 178, 0);
+  max-width: 1000px;
+}
