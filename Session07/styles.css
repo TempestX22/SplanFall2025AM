@@ -55,7 +55,7 @@ div.buttonRelative {
 
 /* Add padding to all of the #wrapper child elements */
 #wrapper>* {
-  padding: 20px;
+  padding: 30px;
 }
 
 header {
