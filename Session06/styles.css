@@ -36,31 +36,33 @@ footer {
 header {
     background-color: #33E89A;
     background-image: url(images/02.jpg);
+    float: inline-start;
 }
 
 nav {
     background-color: rgb(137, 189, 188);
-    float: none;
-    clear: both;
-    
+    float: inline-end;
+    padding-bottom: 40px;
+    padding-left: 184px; 
 }
 
 main {
     background-color: #1B7A50;
     width: 70%;
-    float: left;
+    float: right;
     background-image: url(images/04.jpg);
 }
 
 section {
+    z-index: 10;
+    color: rgb(74, 13, 13);
     background-color: #229C67;
-    background-image: url(images/05.jpg);
 }
 aside {
+    margin-top: 100px;
     background-color: #229C67;
     width: 30%;
     float: left;
-    background-image: url(images/01.jpg);
 }
 
 footer {
