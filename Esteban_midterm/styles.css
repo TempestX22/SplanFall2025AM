@@ -118,25 +118,6 @@ footer a{
 }
 
 
-nav li {
-    display: inline-block;
-    background-color: #1a0303;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 10px;
-    border-radius: 120px;
-}
-
-nav a {
-    color: #6396c6;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #e69c14;
-}
-
 .galh {
   color: #6396c6;
     background-color: #202020;
@@ -205,8 +186,8 @@ aside h2 {
 .star-field::before {
     content: '';
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: #ffffff;
     border-radius: 50%;
     box-shadow:
@@ -237,7 +218,7 @@ aside h2 {
     height: 8px;
     background: rgb(242, 218, 83);
     border-radius: 50%;
-    box-shadow: 0 0 6px white, 0 0 10px white;
+    box-shadow: 0 0 20px white, 0 0 20px white;
     animation: shooting 5s linear infinite;
 }
 
