@@ -1,0 +1,224 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+  background-color: #000000;
+  color: #e6e6e6;
+  font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+/* Secondary text (descriptions, paragraphs, and other supporting text) */
+p, .desc, aside p, footer p, .card h3, .buttonRelative, .buttonAbsolute {
+  font-family: 'Comfortaa', Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* SUBSCRIBE BUTTON */
+div.buttonAbsolute {
+  background-color: #143cbd;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  border-radius: 8px;
+  padding: 12px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+}
+
+/* view gallery button */
+div.buttonRelative {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  width: 200px;
+  position: relative;
+  left: 60px;
+  z-index: 3;
+}
+
+#wrapper {
+  margin: 0px auto;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+/* Add padding to all of the #wrapper child elements */
+#wrapper>* {
+  padding: 20px;
+}
+
+header {
+  order: 1;
+  flex: 1 0 100%;
+}
+
+main {
+  order: 3;
+  flex: 1 0 600px;
+}
+nav {
+  order: 2;
+  flex: 1 0 100%;
+}
+aside {
+  order: 4;
+  flex: 1 0 250px;
+}
+footer {
+  color: #bbb;
+  order: 5;
+  flex: 1 0 100%;
+}
+
+/* Top navigation bar styling */
+.pixel-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #8B0000;
+  box-shadow: 4px 4px 0 #8B0000, -4px -4px 0 #8B0000, 4px -4px 0 #8B0000, -4px 4px 0 #8B0000;
+}
+.pixel-nav ul {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0 12px;
+  display: flex;
+  gap: 28px;
+}
+.pixel-nav a {
+  color: #ff4d4d;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+.pixel-nav a:hover {
+  color: #fff;
+  background: rgba(255,0,0,0.08);
+  border-radius: 4px;
+}
+
+/* Canvas and quote area */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 20px;
+}
+
+/* CSS-based pong area (DOM animated) */
+.pong-area {
+  width: 720px;
+  height: 360px;
+  background: #000;
+  border: 4px solid #8B0000;
+  position: relative;
+  overflow: hidden;
+}
+.paddle {
+  width: 12px;
+  height: 80px;
+  background: #8B0000;
+  position: absolute;
+  top: calc(50% - 40px);
+  transition: top 0.2s linear;
+}
+.paddle.left { left: 12px; animation: paddleMove 3s ease-in-out infinite; }
+.paddle.right { right: 12px; animation: paddleMove 3s ease-in-out infinite; animation-delay: -1.5s; }
+.ball {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 8px);
+  top: calc(50% - 8px);
+  animation: ballMove 3s linear infinite;
+}
+
+@keyframes paddleMove {
+  0% { top: calc(50% - 40px); }
+  25% { top: calc(30% - 40px); }
+  50% { top: calc(50% - 40px); }
+  75% { top: calc(70% - 40px); }
+  100% { top: calc(50% - 40px); }
+}
+
+@keyframes ballMove {
+  0%   { left: 6px;   top: calc(50% - 8px); }
+  12%  { left: calc(25% - 8px); top: calc(30% - 8px); }
+  25%  { left: calc(50% - 8px); top: calc(18% - 8px); }
+  37%  { left: calc(75% - 8px); top: calc(30% - 8px); }
+  50%  { left: calc(100% - 22px); top: calc(50% - 8px); }
+  62%  { left: calc(75% - 8px); top: calc(70% - 8px); }
+  75%  { left: calc(50% - 8px); top: calc(82% - 8px); }
+  87%  { left: calc(25% - 8px); top: calc(70% - 8px); }
+  100% { left: 6px;   top: calc(50% - 8px); }
+}
+
+#quote {
+  color: #ffcccc;
+  background: rgba(255,0,0,0.03);
+  padding: 18px;
+  border: 2px solid #8B0000;
+  width: 720px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Grid layout for consoles/games pages */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: rgba(255,255,255,0.02);
+  border: 2px solid #8B0000;
+  padding: 12px;
+  overflow: hidden;
+}
+.card-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #8B0000;
+  transition: height 0.35s ease, border-color 0.35s ease;
+}
+.card .desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 4px;
+}
+.card.open .desc {
+  max-height: 200px;
+  padding: 10px 4px;
+}
+.card.open .card-img {
+  height: 220px;
+}
+
+@media (max-width: 760px) {
+  .pong-area, #quote { width: 95%; }
+}
