@@ -1,9 +1,8 @@
-/* START border-box fix */
+
 html {
   box-sizing: border-box;
 }
-/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
-/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+
 *,
 *:before,
 *:after {
@@ -18,7 +17,7 @@ body {
   font-family: 'Press Start 2P', Arial, sans-serif;
 }
 
-/* Secondary text (descriptions, paragraphs, and other supporting text) */
+/* Secondary text */
 p, .desc, aside p, footer p, .card h3, .buttonRelative, .buttonAbsolute {
   font-family: 'Comfortaa', Arial, sans-serif;
   font-weight: 300;
@@ -38,7 +37,7 @@ div.buttonAbsolute {
   z-index: 10;
 }
 
-/* view gallery button */
+
 div.buttonRelative {
   background-color: transparent;
   color: #fff;
@@ -185,7 +184,7 @@ footer {
   cursor: pointer;
 }
 
-/* Grid layout for consoles/games pages */
+/* Grid layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

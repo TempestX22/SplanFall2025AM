@@ -17,7 +17,6 @@ function initQuotes() {
   if (!el) return;
   el.addEventListener('click', function () {
     i = (i + 1) % quotes.length;
-    // use jQuery fade if available
     if (typeof $ !== 'undefined') {
       $(el).fadeOut(120, function () {
         el.textContent = quotes[i];
